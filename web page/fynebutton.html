@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+input.abc, select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input.defg, select {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+body {
+        background-image: url("hope.jpg");
+		height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+</style>
+
+ <script type="text/javascript">
+            $(document).ready(function(){
+                $("#content").attr("src","**place your ibm cloudant url for uploading data**");
+            })
+ </script>
+
+<body>
+
+<h2  align="left" style="color:blue" style="font-family:verdana;">Fyne Button Details Form</h2>
+
+<form action="/action_page.php" align="right">
+  <input type="text" class="abc" name="name" placeholder="Your Name">
+  <br>
+  <input type="text" class="abc" name="address" placeholder="Address">
+  <br>
+  <input type="text" class="defg" name="latitude" placeholder="Latitude">
+  <input type="text" class="defg" name="longitude" placeholder="Longitude">
+  <br>
+  <input type="text" class="abc" name="phone" placeholder="Phone Number">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p align="right">All the data entered above cannot be changed later</p>
+
+
+</body>
+</html>
